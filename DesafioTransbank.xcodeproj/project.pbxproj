@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA98B7124F985C500021EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B7024F985C500021EF1 /* AppDelegate.swift */; };
+		2CA98B7324F985C500021EF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B7224F985C500021EF1 /* SceneDelegate.swift */; };
+		2CA98B7524F985C500021EF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B7424F985C500021EF1 /* ViewController.swift */; };
+		2CA98B7824F985C500021EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA98B7624F985C500021EF1 /* Main.storyboard */; };
+		2CA98B7A24F985C700021EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA98B7924F985C700021EF1 /* Assets.xcassets */; };
+		2CA98B7D24F985C700021EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */; };
+		2CA98B8824F985C700021EF1 /* DesafioTransbankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */; };
+		2CA98B9324F985C700021EF1 /* DesafioTransbankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CA98B8424F985C700021EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CA98B6524F985C500021EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA98B6C24F985C500021EF1;
+			remoteInfo = DesafioTransbank;
+		};
+		2CA98B8F24F985C700021EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CA98B6524F985C500021EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA98B6C24F985C500021EF1;
+			remoteInfo = DesafioTransbank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CA98B6D24F985C500021EF1 /* DesafioTransbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTransbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA98B7024F985C500021EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CA98B7224F985C500021EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2CA98B7424F985C500021EF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CA98B7724F985C500021EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CA98B7924F985C700021EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CA98B7C24F985C700021EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CA98B7E24F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA98B8324F985C700021EF1 /* DesafioTransbankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTransbankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTransbankTests.swift; sourceTree = "<group>"; };
+		2CA98B8924F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTransbankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTransbankUITests.swift; sourceTree = "<group>"; };
+		2CA98B9424F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA98B6A24F985C500021EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA98B8024F985C700021EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA98B8B24F985C700021EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CA98B6424F985C500021EF1 = {
+			isa = PBXGroup;
+			children = (
+				2CA98B6F24F985C500021EF1 /* DesafioTransbank */,
+				2CA98B8624F985C700021EF1 /* DesafioTransbankTests */,
+				2CA98B9124F985C700021EF1 /* DesafioTransbankUITests */,
+				2CA98B6E24F985C500021EF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CA98B6E24F985C500021EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CA98B6D24F985C500021EF1 /* DesafioTransbank.app */,
+				2CA98B8324F985C700021EF1 /* DesafioTransbankTests.xctest */,
+				2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CA98B6F24F985C500021EF1 /* DesafioTransbank */ = {
+			isa = PBXGroup;
+			children = (
+				2CA98B7024F985C500021EF1 /* AppDelegate.swift */,
+				2CA98B7224F985C500021EF1 /* SceneDelegate.swift */,
+				2CA98B7424F985C500021EF1 /* ViewController.swift */,
+				2CA98B7624F985C500021EF1 /* Main.storyboard */,
+				2CA98B7924F985C700021EF1 /* Assets.xcassets */,
+				2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */,
+				2CA98B7E24F985C700021EF1 /* Info.plist */,
+			);
+			path = DesafioTransbank;
+			sourceTree = "<group>";
+		};
+		2CA98B8624F985C700021EF1 /* DesafioTransbankTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */,
+				2CA98B8924F985C700021EF1 /* Info.plist */,
+			);
+			path = DesafioTransbankTests;
+			sourceTree = "<group>";
+		};
+		2CA98B9124F985C700021EF1 /* DesafioTransbankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */,
+				2CA98B9424F985C700021EF1 /* Info.plist */,
+			);
+			path = DesafioTransbankUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CA98B6C24F985C500021EF1 /* DesafioTransbank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA98B9724F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbank" */;
+			buildPhases = (
+				2CA98B6924F985C500021EF1 /* Sources */,
+				2CA98B6A24F985C500021EF1 /* Frameworks */,
+				2CA98B6B24F985C500021EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioTransbank;
+			productName = DesafioTransbank;
+			productReference = 2CA98B6D24F985C500021EF1 /* DesafioTransbank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CA98B8224F985C700021EF1 /* DesafioTransbankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA98B9A24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankTests" */;
+			buildPhases = (
+				2CA98B7F24F985C700021EF1 /* Sources */,
+				2CA98B8024F985C700021EF1 /* Frameworks */,
+				2CA98B8124F985C700021EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CA98B8524F985C700021EF1 /* PBXTargetDependency */,
+			);
+			name = DesafioTransbankTests;
+			productName = DesafioTransbankTests;
+			productReference = 2CA98B8324F985C700021EF1 /* DesafioTransbankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2CA98B8D24F985C700021EF1 /* DesafioTransbankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA98B9D24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankUITests" */;
+			buildPhases = (
+				2CA98B8A24F985C700021EF1 /* Sources */,
+				2CA98B8B24F985C700021EF1 /* Frameworks */,
+				2CA98B8C24F985C700021EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CA98B9024F985C700021EF1 /* PBXTargetDependency */,
+			);
+			name = DesafioTransbankUITests;
+			productName = DesafioTransbankUITests;
+			productReference = 2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CA98B6524F985C500021EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = matias;
+				TargetAttributes = {
+					2CA98B6C24F985C500021EF1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					2CA98B8224F985C700021EF1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2CA98B6C24F985C500021EF1;
+					};
+					2CA98B8D24F985C700021EF1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2CA98B6C24F985C500021EF1;
+					};
+				};
+			};
+			buildConfigurationList = 2CA98B6824F985C500021EF1 /* Build configuration list for PBXProject "DesafioTransbank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CA98B6424F985C500021EF1;
+			productRefGroup = 2CA98B6E24F985C500021EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CA98B6C24F985C500021EF1 /* DesafioTransbank */,
+				2CA98B8224F985C700021EF1 /* DesafioTransbankTests */,
+				2CA98B8D24F985C700021EF1 /* DesafioTransbankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CA98B6B24F985C500021EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA98B7D24F985C700021EF1 /* LaunchScreen.storyboard in Resources */,
+				2CA98B7A24F985C700021EF1 /* Assets.xcassets in Resources */,
+				2CA98B7824F985C500021EF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA98B8124F985C700021EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA98B8C24F985C700021EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA98B6924F985C500021EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA98B7524F985C500021EF1 /* ViewController.swift in Sources */,
+				2CA98B7124F985C500021EF1 /* AppDelegate.swift in Sources */,
+				2CA98B7324F985C500021EF1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA98B7F24F985C700021EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA98B8824F985C700021EF1 /* DesafioTransbankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA98B8A24F985C700021EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA98B9324F985C700021EF1 /* DesafioTransbankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CA98B8524F985C700021EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CA98B6C24F985C500021EF1 /* DesafioTransbank */;
+			targetProxy = 2CA98B8424F985C700021EF1 /* PBXContainerItemProxy */;
+		};
+		2CA98B9024F985C700021EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CA98B6C24F985C500021EF1 /* DesafioTransbank */;
+			targetProxy = 2CA98B8F24F985C700021EF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CA98B7624F985C500021EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA98B7724F985C500021EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA98B7C24F985C700021EF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CA98B9524F985C700021EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CA98B9624F985C700021EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CA98B9824F985C700021EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafioTransbank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CA98B9924F985C700021EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafioTransbank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CA98B9B24F985C700021EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafioTransbankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTransbank.app/DesafioTransbank";
+			};
+			name = Debug;
+		};
+		2CA98B9C24F985C700021EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafioTransbankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTransbank.app/DesafioTransbank";
+			};
+			name = Release;
+		};
+		2CA98B9E24F985C700021EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafioTransbankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioTransbank;
+			};
+			name = Debug;
+		};
+		2CA98B9F24F985C700021EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafioTransbankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioTransbank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA98B6824F985C500021EF1 /* Build configuration list for PBXProject "DesafioTransbank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA98B9524F985C700021EF1 /* Debug */,
+				2CA98B9624F985C700021EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA98B9724F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA98B9824F985C700021EF1 /* Debug */,
+				2CA98B9924F985C700021EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA98B9A24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA98B9B24F985C700021EF1 /* Debug */,
+				2CA98B9C24F985C700021EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA98B9D24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA98B9E24F985C700021EF1 /* Debug */,
+				2CA98B9F24F985C700021EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CA98B6524F985C500021EF1 /* Project object */;
+}
