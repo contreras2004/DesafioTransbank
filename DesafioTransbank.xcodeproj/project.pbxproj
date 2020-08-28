@@ -173,6 +173,7 @@
 			buildConfigurationList = 2CA98B9724F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbank" */;
 			buildPhases = (
 				3DA15DB7F03313363EE1DDF9 /* [CP] Check Pods Manifest.lock */,
+				2CA98BA024F994A500021EF1 /* Swiftlint */,
 				2CA98B6924F985C500021EF1 /* Sources */,
 				2CA98B6A24F985C500021EF1 /* Frameworks */,
 				2CA98B6B24F985C500021EF1 /* Resources */,
@@ -312,6 +313,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank-DesafioTransbankUITests/Pods-DesafioTransbank-DesafioTransbankUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2CA98BA024F994A500021EF1 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		3DA15DB7F03313363EE1DDF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

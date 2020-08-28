@@ -9,6 +9,7 @@ target 'DesafioTransbank' do
   pod 'lottie-ios'
   pod 'Kingfisher'
   pod 'SketchKit'
+  pod 'SwiftLint'
 
   target 'DesafioTransbankTests' do
     inherit! :search_paths
