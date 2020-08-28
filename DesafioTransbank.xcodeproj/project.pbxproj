@@ -14,9 +14,9 @@
 		2CA98B7D24F985C700021EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */; };
 		2CA98B8824F985C700021EF1 /* DesafioTransbankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */; };
 		2CA98B9324F985C700021EF1 /* DesafioTransbankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */; };
-		4206FC6A9B90442348F1B7FE /* Pods_DesafioTransbank_DesafioTransbankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17371900D9A23855C1698512 /* Pods_DesafioTransbank_DesafioTransbankUITests.framework */; };
-		FA5BBCACADFA9073AD03A793 /* Pods_DesafioTransbankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C66C58448DCFEDA1B51C8B1 /* Pods_DesafioTransbankTests.framework */; };
-		FE2F6CCC6793F57D7A95C8F2 /* Pods_DesafioTransbank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E382B53535F1F65E10AC9 /* Pods_DesafioTransbank.framework */; };
+		2CA98BF224F9A3AD00021EF1 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA98BF124F9A3AD00021EF1 /* Components.framework */; };
+		D3747A184311410320CBF1F3 /* Pods_DesafioTransbankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */; };
+		EBACBF6F518D815E5F58F945 /* Pods_DesafioTransbank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17371900D9A23855C1698512 /* Pods_DesafioTransbank_DesafioTransbankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbank_DesafioTransbankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C66C58448DCFEDA1B51C8B1 /* Pods_DesafioTransbankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA98B6D24F985C500021EF1 /* DesafioTransbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTransbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA98B7024F985C500021EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CA98B7224F985C500021EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,12 +50,13 @@
 		2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTransbankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTransbankUITests.swift; sourceTree = "<group>"; };
 		2CA98B9424F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4265304E34AF6659929F6558 /* Pods-DesafioTransbank-DesafioTransbankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbank-DesafioTransbankUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTransbank-DesafioTransbankUITests/Pods-DesafioTransbank-DesafioTransbankUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4A93A4483BC076B2E288E4D1 /* Pods-DesafioTransbank-DesafioTransbankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbank-DesafioTransbankUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTransbank-DesafioTransbankUITests/Pods-DesafioTransbank-DesafioTransbankUITests.release.xcconfig"; sourceTree = "<group>"; };
-		637E382B53535F1F65E10AC9 /* Pods_DesafioTransbank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA98BED24F99A9400021EF1 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA98BF124F9A3AD00021EF1 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792BEC850A0E2F4AEBFE13CB /* Pods-DesafioTransbankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.release.xcconfig"; sourceTree = "<group>"; };
 		A584722A336F6F763085BE19 /* Pods-DesafioTransbankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52B9FCCD8DFCDFC7866DD01 /* Pods-DesafioTransbank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbank.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank.debug.xcconfig"; sourceTree = "<group>"; };
+		DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC34D5588744D910EDB6276 /* Pods-DesafioTransbank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbank.release.xcconfig"; path = "Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE2F6CCC6793F57D7A95C8F2 /* Pods_DesafioTransbank.framework in Frameworks */,
+				2CA98BF224F9A3AD00021EF1 /* Components.framework in Frameworks */,
+				EBACBF6F518D815E5F58F945 /* Pods_DesafioTransbank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5BBCACADFA9073AD03A793 /* Pods_DesafioTransbankTests.framework in Frameworks */,
+				D3747A184311410320CBF1F3 /* Pods_DesafioTransbankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4206FC6A9B90442348F1B7FE /* Pods_DesafioTransbank_DesafioTransbankUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +93,6 @@
 			children = (
 				D52B9FCCD8DFCDFC7866DD01 /* Pods-DesafioTransbank.debug.xcconfig */,
 				EDC34D5588744D910EDB6276 /* Pods-DesafioTransbank.release.xcconfig */,
-				4265304E34AF6659929F6558 /* Pods-DesafioTransbank-DesafioTransbankUITests.debug.xcconfig */,
-				4A93A4483BC076B2E288E4D1 /* Pods-DesafioTransbank-DesafioTransbankUITests.release.xcconfig */,
 				A584722A336F6F763085BE19 /* Pods-DesafioTransbankTests.debug.xcconfig */,
 				792BEC850A0E2F4AEBFE13CB /* Pods-DesafioTransbankTests.release.xcconfig */,
 			);
@@ -127,12 +124,9 @@
 		2CA98B6F24F985C500021EF1 /* DesafioTransbank */ = {
 			isa = PBXGroup;
 			children = (
-				2CA98B7024F985C500021EF1 /* AppDelegate.swift */,
-				2CA98B7224F985C500021EF1 /* SceneDelegate.swift */,
-				2CA98B7424F985C500021EF1 /* ViewController.swift */,
 				2CA98B7924F985C700021EF1 /* Assets.xcassets */,
-				2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */,
-				2CA98B7E24F985C700021EF1 /* Info.plist */,
+				2CA98BA124F9968300021EF1 /* App */,
+				2CA98B7424F985C500021EF1 /* ViewController.swift */,
 			);
 			path = DesafioTransbank;
 			sourceTree = "<group>";
@@ -155,12 +149,24 @@
 			path = DesafioTransbankUITests;
 			sourceTree = "<group>";
 		};
+		2CA98BA124F9968300021EF1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CA98B7E24F985C700021EF1 /* Info.plist */,
+				2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */,
+				2CA98B7024F985C500021EF1 /* AppDelegate.swift */,
+				2CA98B7224F985C500021EF1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		8B01B8C214181E0BD5CEC35E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				637E382B53535F1F65E10AC9 /* Pods_DesafioTransbank.framework */,
-				17371900D9A23855C1698512 /* Pods_DesafioTransbank_DesafioTransbankUITests.framework */,
-				1C66C58448DCFEDA1B51C8B1 /* Pods_DesafioTransbankTests.framework */,
+				2CA98BF124F9A3AD00021EF1 /* Components.framework */,
+				2CA98BED24F99A9400021EF1 /* Components.framework */,
+				C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */,
+				DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,7 +183,7 @@
 				2CA98B6924F985C500021EF1 /* Sources */,
 				2CA98B6A24F985C500021EF1 /* Frameworks */,
 				2CA98B6B24F985C500021EF1 /* Resources */,
-				99A9A5EE81FE9FAD7133815D /* [CP] Embed Pods Frameworks */,
+				3E7036DD2318C85BA95C9134 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +202,7 @@
 				2CA98B7F24F985C700021EF1 /* Sources */,
 				2CA98B8024F985C700021EF1 /* Frameworks */,
 				2CA98B8124F985C700021EF1 /* Resources */,
+				1498A62F48F8FF5184A9FA5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,11 +218,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CA98B9D24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankUITests" */;
 			buildPhases = (
-				841D8D4B7C58335301512429 /* [CP] Check Pods Manifest.lock */,
 				2CA98B8A24F985C700021EF1 /* Sources */,
 				2CA98B8B24F985C700021EF1 /* Frameworks */,
 				2CA98B8C24F985C700021EF1 /* Resources */,
-				07934E0EBB0BEC10341D6B07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,21 +302,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07934E0EBB0BEC10341D6B07 /* [CP] Embed Pods Frameworks */ = {
+		1498A62F48F8FF5184A9FA5F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank-DesafioTransbankUITests/Pods-DesafioTransbank-DesafioTransbankUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank-DesafioTransbankUITests/Pods-DesafioTransbank-DesafioTransbankUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank-DesafioTransbankUITests/Pods-DesafioTransbank-DesafioTransbankUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2CA98BA024F994A500021EF1 /* Swiftlint */ = {
@@ -354,26 +359,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		841D8D4B7C58335301512429 /* [CP] Check Pods Manifest.lock */ = {
+		3E7036DD2318C85BA95C9134 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DesafioTransbank-DesafioTransbankUITests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94385D4CD7B8672E7DBFCAD3 /* [CP] Check Pods Manifest.lock */ = {
@@ -396,23 +396,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99A9A5EE81FE9FAD7133815D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTransbank/Pods-DesafioTransbank-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -591,7 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesafioTransbank/Info.plist;
+				INFOPLIST_FILE = DesafioTransbank/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesafioTransbank/Info.plist;
+				INFOPLIST_FILE = DesafioTransbank/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -667,7 +650,6 @@
 		};
 		2CA98B9E24F985C700021EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4265304E34AF6659929F6558 /* Pods-DesafioTransbank-DesafioTransbankUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -687,7 +669,6 @@
 		};
 		2CA98B9F24F985C700021EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A93A4483BC076B2E288E4D1 /* Pods-DesafioTransbank-DesafioTransbankUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

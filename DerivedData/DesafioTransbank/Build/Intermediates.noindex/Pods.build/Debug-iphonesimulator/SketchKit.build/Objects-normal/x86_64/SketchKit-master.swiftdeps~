@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "d318c49086d094f5c423c6925aaac2c1"
+build_time: [1598648060, 370569000]
+inputs:
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Pods/SketchKit/Sources/SketchKit/Extensions/Anchors+SafeArea.swift": [1598641923, 472586287]
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Pods/SketchKit/Sources/SketchKit/SketchKitLayoutGuideDSL.swift": [1598641923, 471895507]
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Pods/SketchKit/Sources/SketchKit/SketchKitViewDSL.swift": [1598641923, 473045027]
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Pods/SketchKit/Sources/SketchKit/Extensions/UILayoutGuide+Anchors.swift": [1598641923, 472811784]
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Pods/SketchKit/Sources/SketchKit/Extensions/UIView+Anchors.swift": [1598641923, 472356324]

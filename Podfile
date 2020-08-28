@@ -1,23 +1,40 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.6'
+use_frameworks!
+workspace 'DesafioTransbank'
+
+def projectPods
+  pod 'Kingfisher'
+  pod 'SwiftLint'
+end
+
+def uiPods
+  pod 'SketchKit'
+  pod 'lottie-ios'
+end
+
+def unitTestPods
+  pod 'Nimble-Snapshots'
+  pod 'Quick'
+  pod 'Nimble'
+end
 
 target 'DesafioTransbank' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for DesafioTransbank
-  pod 'lottie-ios'
-  pod 'Kingfisher'
-  pod 'SketchKit'
-  pod 'SwiftLint'
+  project 'DesafioTransbank'
+  projectPods
+  uiPods
 
   target 'DesafioTransbankTests' do
     inherit! :search_paths
-    # Pods for testing
+    unitTestPods
   end
+end
 
-  target 'DesafioTransbankUITests' do
-    # Pods for testing
+target 'Components' do
+  project 'Components/Components'
+  uiPods
+
+  target 'ComponentsTests' do
+    unitTestPods
   end
-
 end

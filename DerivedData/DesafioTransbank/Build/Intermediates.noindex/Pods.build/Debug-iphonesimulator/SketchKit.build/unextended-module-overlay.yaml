@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/matiascontreras/Documents/Repos/DesafioTransbank/DerivedData/DesafioTransbank/Build/Products/Debug-iphonesimulator/SketchKit/SketchKit.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/matiascontreras/Documents/Repos/DesafioTransbank/DerivedData/DesafioTransbank/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SketchKit.build/unextended-module.modulemap",
+    }]
+  }]
+}

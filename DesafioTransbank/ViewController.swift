@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import Components
 
 class ViewController: UIViewController {
+    
+    override func loadView() {
+        self.view = TBSearchBarView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

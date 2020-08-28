@@ -5,6 +5,9 @@
       location = "group:DesafioTransbank.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Components/Components.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "b67ae4930c02adcdf53c9953b160f02b"
+build_time: [1598648050, 788241000]
+inputs:
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Components/Components/SearchBar/UIView+ext.swift": [1598648049, 849193859]
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Components/Components/SearchBar/TBSearchBarView.swift": [1598647925, 511509108]
+  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/Components/Components/ViewCodableProtocol.swift": [1598645805, 805023987]
