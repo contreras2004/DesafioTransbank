@@ -1,0 +1,6 @@
+framework module Pods_DesafioTransbankTests {
+  umbrella header "Pods-DesafioTransbankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,26 @@
+PODS:
+  - Kingfisher (5.15.0):
+    - Kingfisher/Core (= 5.15.0)
+  - Kingfisher/Core (5.15.0)
+  - lottie-ios (3.1.8)
+  - SketchKit (1.3.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - lottie-ios
+  - SketchKit
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - lottie-ios
+    - SketchKit
+
+SPEC CHECKSUMS:
+  Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  SketchKit: 5698aee1e2f87d7e50467017ee6f5808e779a09d
+
+PODFILE CHECKSUM: 4836ddf52a75836b05f4bb81ef40b09a0900d580
+
+COCOAPODS: 1.9.3
