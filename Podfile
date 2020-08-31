@@ -3,6 +3,10 @@ platform :ios, '13.6'
 use_frameworks!
 workspace 'DesafioTransbank'
 
+def networkingPods
+  pod 'Alamofire'
+end
+
 def projectPods
   pod 'Kingfisher'
   pod 'SwiftLint'
@@ -35,6 +39,15 @@ target 'Components' do
   uiPods
 
   target 'ComponentsTests' do
+    unitTestPods
+  end
+end
+
+target 'Network' do
+  project 'Network/Network'
+  networkingPods
+
+  target 'NetworkTests' do
     unitTestPods
   end
 end

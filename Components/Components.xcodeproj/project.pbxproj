@@ -16,6 +16,7 @@
 		2CB51A2224FD383800139004 /* TBLottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A2124FD383800139004 /* TBLottieAnimationView.swift */; };
 		2CB51A2624FD3EF900139004 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51A2524FD3EF900139004 /* loading.json */; };
 		2CB51A2824FD433200139004 /* TBLottieAnimationView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */; };
+		2CB51A2B24FD4CBE00139004 /* TBLottieAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A2A24FD4CBE00139004 /* TBLottieAnimationViewModel.swift */; };
 		3B0C44600F6B9E4EDF5CEC91 /* Pods_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53851B5170A38A70C0B66181 /* Pods_Components.framework */; };
 		6FE2CB90B24DACADBAE0A88D /* Pods_Components_ComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00B37E6C09DBCA39CD62F9D /* Pods_Components_ComponentsTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		2CB51A2124FD383800139004 /* TBLottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLottieAnimationView.swift; sourceTree = "<group>"; };
 		2CB51A2524FD3EF900139004 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TBLottieAnimationView+ext.swift"; sourceTree = "<group>"; };
+		2CB51A2A24FD4CBE00139004 /* TBLottieAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLottieAnimationViewModel.swift; sourceTree = "<group>"; };
 		44107F5225410E35A1FE3619 /* Pods-Components-ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components-ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-Components-ComponentsTests/Pods-Components-ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		53851B5170A38A70C0B66181 /* Pods_Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55474FB9DC2841AD69D8DFA1 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.debug.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,8 +114,8 @@
 		2CA98BD224F9980F00021EF1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2CB51A2924FD4C9B00139004 /* Extensions */,
 				2CB51A2324FD383D00139004 /* TBLottieAnimationView */,
-				2CA98BF424F9A5CA00021EF1 /* UIView+ext.swift */,
 				2CA98BEA24F9982000021EF1 /* SearchBar */,
 				2CA98BD324F9980F00021EF1 /* Components.h */,
 				2CA98BD424F9980F00021EF1 /* Info.plist */,
@@ -143,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB51A2124FD383800139004 /* TBLottieAnimationView.swift */,
-				2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */,
+				2CB51A2A24FD4CBE00139004 /* TBLottieAnimationViewModel.swift */,
 			);
 			path = TBLottieAnimationView;
 			sourceTree = "<group>";
@@ -154,6 +156,15 @@
 				2CB51A2524FD3EF900139004 /* loading.json */,
 			);
 			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		2CB51A2924FD4C9B00139004 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */,
+				2CA98BF424F9A5CA00021EF1 /* UIView+ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C37276E16AEC922274E7867F /* Frameworks */ = {
@@ -345,6 +356,7 @@
 			files = (
 				2CA98BF524F9A5CA00021EF1 /* UIView+ext.swift in Sources */,
 				2CB51A2224FD383800139004 /* TBLottieAnimationView.swift in Sources */,
+				2CB51A2B24FD4CBE00139004 /* TBLottieAnimationViewModel.swift in Sources */,
 				2CA98BEC24F9984100021EF1 /* TBSearchBarView.swift in Sources */,
 				2CA98BF024F99DA100021EF1 /* ViewCodableProtocol.swift in Sources */,
 				2CB51A2824FD433200139004 /* TBLottieAnimationView+ext.swift in Sources */,

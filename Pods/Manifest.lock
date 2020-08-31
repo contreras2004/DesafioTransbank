@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.2.2)
   - iOSSnapshotTestCase (6.2.0):
     - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
   - iOSSnapshotTestCase/Core (6.2.0)
@@ -19,6 +20,7 @@ PODS:
   - SwiftLint (0.40.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Kingfisher
   - lottie-ios
   - Nimble
@@ -29,6 +31,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - iOSSnapshotTestCase
     - Kingfisher
     - lottie-ios
@@ -39,6 +42,7 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
@@ -48,6 +52,6 @@ SPEC CHECKSUMS:
   SketchKit: 5698aee1e2f87d7e50467017ee6f5808e779a09d
   SwiftLint: bbfed21bf4451dcbd0f5cdbee44a18e06cf91b12
 
-PODFILE CHECKSUM: bc8de5353075ccef1b762e4bc2917efcc1446a13
+PODFILE CHECKSUM: 16db82072bf775d36214c4c2639d497f2d1964bd
 
 COCOAPODS: 1.9.3

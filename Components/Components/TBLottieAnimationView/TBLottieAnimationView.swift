@@ -9,24 +9,7 @@
 import UIKit
 import Lottie
 
-public enum TBLottieAnimation: String {
-    case loading
-    case noConnection
-    case genericError
-    case noSearchResults
-}
-
-public struct TBLottieAnimationViewModel{
-    let message: String
-    let animation: TBLottieAnimation
-
-    public init(message: String, animation: TBLottieAnimation) {
-        self.message = message
-        self.animation = animation
-    }
-}
-
-public class TBLottieAnimationView: UIView {
+class TBLottieAnimationView: UIView {
 
     let viewModel: TBLottieAnimationViewModel
 
@@ -43,11 +26,10 @@ public class TBLottieAnimationView: UIView {
         let animation = AnimationView(name: self.viewModel.animation.rawValue, bundle: Bundle(for: TBLottieAnimationView.self))
         animation.loopMode = .loop
         animation.contentMode = .scaleAspectFill
-        animation.backgroundColor = .red
         return animation
     }()
 
-    public init(viewModel: TBLottieAnimationViewModel) {
+    init(viewModel: TBLottieAnimationViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
         buildUI()
@@ -60,12 +42,12 @@ public class TBLottieAnimationView: UIView {
 }
 
 extension TBLottieAnimationView: ViewCodable {
-    public func buildViewHierarchy() {
+    func buildViewHierarchy() {
         addSubview(lottieAnimation)
         addSubview(label)
     }
 
-    public func addConstraints() {
+    func addConstraints() {
         lottieAnimation.layout.applyConstraint { view in
             view.centerXAnchor(equalTo: centerXAnchor)
             view.centerYAnchor(equalTo: centerYAnchor)
