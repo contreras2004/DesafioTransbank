@@ -27,6 +27,7 @@ target 'DesafioTransbank' do
   project 'DesafioTransbank'
   projectPods
   uiPods
+  networkingPods
 
   target 'DesafioTransbankTests' do
     inherit! :search_paths
@@ -43,11 +44,11 @@ target 'Components' do
   end
 end
 
-target 'Network' do
-  project 'Network/Network'
+target 'TBNetwork' do
+  project 'TBNetwork/TBNetwork'
   networkingPods
 
-  target 'NetworkTests' do
+  target 'TBNetworkTests' do
     unitTestPods
   end
 end

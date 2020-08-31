@@ -5,7 +5,7 @@
       location = "group:DesafioTransbank.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Network/Network.xcodeproj">
+      location = "group:TBNetwork/TBNetwork.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Components/Components.xcodeproj">

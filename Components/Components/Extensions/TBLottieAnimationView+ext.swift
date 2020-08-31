@@ -25,6 +25,7 @@ extension UIView {
 
     public func addAnimation(viewModel: TBLottieAnimationViewModel) {
         let animationView = TBLottieAnimationView(viewModel: viewModel)
+        self.animation = animationView
         self.addSubview(animationView)
         animationView.layout.applyConstraint { view in
             view.inset(to: self)
