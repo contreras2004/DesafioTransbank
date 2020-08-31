@@ -9,16 +9,6 @@
 import UIKit
 import Components
 
-
-class SongCell: UITableViewCell {
-    static let reusableID = "SongsCelReusablelID"
-
-
-    func configure(with song: Song) {
-//        self.contentView.te
-    }
-}
-
 class SongsListViewModel {
     var songs: [Song] = []
 
@@ -32,14 +22,28 @@ class SongsListView: UIView {
     var viewModel: SongsListViewModel {
         didSet {
             self.tableView.reloadData()
+            if self.viewModel.songs.isEmpty {
+                self.addAnimation(viewModel: .init(message: "No hay resultados", animation: .emptyResults))
+            }
         }
     }
+
+   lazy var searchBar: UISearchBar = {
+        let view = UISearchBar(frame: .zero)
+        view.placeholder = "Ej: Bohemian Rhapsody"
+        return view
+    }()
 
     lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero)
         view.delegate = self
         view.dataSource = self
         view.register(SongCell.self, forCellReuseIdentifier: SongCell.reusableID)
+        view.estimatedRowHeight = 112
+        view.separatorStyle = .none
+        view.backgroundColor = .clear
+        view.backgroundView = UIView()
+        view.keyboardDismissMode = .onDrag
         return view
     }()
 
@@ -55,7 +59,9 @@ class SongsListView: UIView {
 }
 
 extension SongsListView: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
+    }
 }
 
 extension SongsListView: UITableViewDataSource {
@@ -65,7 +71,11 @@ extension SongsListView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: SongCell.reusableID) as? SongCell {
-            cell.configure(with: self.viewModel.songs[indexPath.row])
+            let song = self.viewModel.songs[indexPath.row]
+            cell.viewModel = SongCellViewModel(
+                songTitle: song.trackName ?? "",
+                artistName: song.artistName ?? "",
+                imageUrl: song.artworkUrl100 ?? URL(fileURLWithPath: ""))
             return cell
         }
         return UITableViewCell()
@@ -74,12 +84,21 @@ extension SongsListView: UITableViewDataSource {
 
 extension SongsListView: ViewCodable {
     func buildViewHierarchy() {
+        addSubview(searchBar)
         addSubview(tableView)
     }
 
     func addConstraints() {
+        searchBar.layout.applyConstraint { view in
+            view.leftAnchor(equalTo: leftAnchor)
+            view.topAnchor(equalTo: safeTopAnchor)
+            view.rightAnchor(equalTo: rightAnchor)
+        }
         tableView.layout.applyConstraint { view in
-            view.inset(to: self)
+            view.leftAnchor(equalTo: leftAnchor)
+            view.topAnchor(equalTo: searchBar.bottomAnchor)
+            view.rightAnchor(equalTo: rightAnchor)
+            view.bottomAnchor(equalTo: safeBottomAnchor)
         }
     }
 }

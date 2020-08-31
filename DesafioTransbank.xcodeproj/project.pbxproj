@@ -19,6 +19,8 @@
 		2CB51A7F24FD6F4300139004 /* TBNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB51A7E24FD6F4300139004 /* TBNetwork.framework */; };
 		2CB51A8424FD87F700139004 /* ItunesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A8324FD87F700139004 /* ItunesResponseModel.swift */; };
 		2CB51A8724FD8FC400139004 /* SongsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A8624FD8FC400139004 /* SongsListView.swift */; };
+		2CB51A8C24FD9C6200139004 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A8B24FD9C6200139004 /* SongCell.swift */; };
+		2CB51A8E24FDA7E400139004 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A8D24FDA7E400139004 /* SongModel.swift */; };
 		D3747A184311410320CBF1F3 /* Pods_DesafioTransbankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */; };
 		EBACBF6F518D815E5F58F945 /* Pods_DesafioTransbank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		2CB51A7E24FD6F4300139004 /* TBNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TBNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB51A8324FD87F700139004 /* ItunesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesResponseModel.swift; sourceTree = "<group>"; };
 		2CB51A8624FD8FC400139004 /* SongsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListView.swift; sourceTree = "<group>"; };
+		2CB51A8B24FD9C6200139004 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		2CB51A8D24FDA7E400139004 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		792BEC850A0E2F4AEBFE13CB /* Pods-DesafioTransbankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.release.xcconfig"; sourceTree = "<group>"; };
 		A584722A336F6F763085BE19 /* Pods-DesafioTransbankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +181,7 @@
 				2CB51A8524FD87FB00139004 /* Models */,
 				2CA98B7424F985C500021EF1 /* SongsListViewController.swift */,
 				2CB51A8624FD8FC400139004 /* SongsListView.swift */,
+				2CB51A8B24FD9C6200139004 /* SongCell.swift */,
 			);
 			path = SongsList;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB51A8324FD87F700139004 /* ItunesResponseModel.swift */,
+				2CB51A8D24FDA7E400139004 /* SongModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -438,7 +444,9 @@
 			files = (
 				2CA98B7524F985C500021EF1 /* SongsListViewController.swift in Sources */,
 				2CA98B7124F985C500021EF1 /* AppDelegate.swift in Sources */,
+				2CB51A8E24FDA7E400139004 /* SongModel.swift in Sources */,
 				2CB51A7D24FD6CA800139004 /* TBEndpoints.swift in Sources */,
+				2CB51A8C24FD9C6200139004 /* SongCell.swift in Sources */,
 				2CB51A8724FD8FC400139004 /* SongsListView.swift in Sources */,
 				2CB51A8424FD87F700139004 /* ItunesResponseModel.swift in Sources */,
 				2CA98B7324F985C500021EF1 /* SceneDelegate.swift in Sources */,

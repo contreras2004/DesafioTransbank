@@ -18,11 +18,24 @@ protocol TBRequestPerformer: AnyObject {
 public class TBRequest: NSObject, TBRequestPerformer {
     public static func request<T: Codable>(endpoint: TBEndpoint, completionHandler: @escaping (Result<T, Error>) -> Void) {
 
-        AF.request(endpoint).responseDecodable(of: T.self) { response in
+        AF.request(endpoint) { urlRequest in
+            urlRequest.timeoutInterval = 5
+        }.response { response in
+            response.result
             switch response.result {
             case .success(let data):
-                completionHandler(Result.success(data))
+                let jsonDecoder = JSONDecoder()
+                guard let data = data else { return }
+                do {
+                    let decodedData = try jsonDecoder.decode(T.self, from: data)
+                    completionHandler(Result.success(decodedData))
+                } catch (let error) {
+                    debugPrint("Could not decode response: \(error)")
+                    completionHandler(Result.failure(error))
+                }
+
             case .failure(let error):
+                debugPrint("Encontro un error: \(error.underlyingError)")
                 completionHandler(Result.failure(error))
             }
         }

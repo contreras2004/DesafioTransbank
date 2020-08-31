@@ -8,6 +8,7 @@
 
 import UIKit
 import Lottie
+import SketchKit
 
 class TBLottieAnimationView: UIView {
 
@@ -24,8 +25,8 @@ class TBLottieAnimationView: UIView {
 
     lazy var lottieAnimation: AnimationView = {
         let animation = AnimationView(name: self.viewModel.animation.rawValue, bundle: Bundle(for: TBLottieAnimationView.self))
-        animation.loopMode = .loop
-        animation.contentMode = .scaleAspectFill
+        animation.loopMode = self.viewModel.loopAnimation ? .loop : .playOnce
+        animation.contentMode = .scaleAspectFit
         return animation
     }()
 
@@ -34,6 +35,7 @@ class TBLottieAnimationView: UIView {
         super.init(frame: .zero)
         buildUI()
         lottieAnimation.play()
+        self.isUserInteractionEnabled = false
     }
 
     required init?(coder: NSCoder) {

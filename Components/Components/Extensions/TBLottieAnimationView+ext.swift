@@ -24,6 +24,10 @@ extension UIView {
     }
 
     public func addAnimation(viewModel: TBLottieAnimationViewModel) {
+        if self.animation?.viewModel == viewModel {
+            return
+        }
+        removeAnimation()
         let animationView = TBLottieAnimationView(viewModel: viewModel)
         self.animation = animationView
         self.addSubview(animationView)

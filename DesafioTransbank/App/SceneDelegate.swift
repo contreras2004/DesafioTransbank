@@ -16,9 +16,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        let navigationController = UINavigationController(rootViewController: SongsListViewController())
+        //navigationController.navigationBar.prefersLargeTitles = true
+
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = SongsListViewController()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

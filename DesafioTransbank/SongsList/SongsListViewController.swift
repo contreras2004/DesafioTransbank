@@ -30,25 +30,42 @@ class SongsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Canciones" //this should be in a localized file... but for the sake of this test...
         self.view.backgroundColor = .white
-        self.loadSongs()
-
+        self.songsListView.searchBar.delegate = self
+        self.songsListView.addAnimation(viewModel: .init(message: "Para comenzar ingresa\nlo que quieres buscar", animation: .searchTerm, loopAnimation: false))
     }
 
-    private func loadSongs() {
+    private func search(searchTerm: String) {
         self.view.addAnimation(viewModel: .init(message: "Cargando", animation: .loading))
-        TBRequest.request(
-            endpoint: Endpoint.itunes.rawValue
-        ) { [weak self] (result: Result<ItunesResponseModel, Error>) in
-
+        guard let fullUrl = EndpointBuilder.buildEndpoint(endpoint: Endpoint.itunes, extraQueryItems: [
+            .init(name: "term", value: searchTerm)
+        ]) else { return }
+        debugPrint(fullUrl)
+        TBRequest.request(endpoint: fullUrl) { [weak self] (result: Result<ItunesResponseModel, Error>) in
+            self?.view.removeAnimation()
             switch result {
             case .success(let itunesResponse):
-                debugPrint("encontró \(itunesResponse.results.count)")
                 self?.songsListView.viewModel = SongsListViewModel(songs: itunesResponse.results)
-                self?.view.removeAnimation()
             case .failure(let error):
-                debugPrint("error: \(error)")
+                self?.view.addAnimation(viewModel: .init(
+                    message: "Ocurrió un error",
+                    animation: .genericError))
             }
         }
+    }
+}
+
+extension SongsListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.search(searchTerm: searchText)
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.songsListView.searchBar.resignFirstResponder()
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.songsListView.searchBar.resignFirstResponder()
     }
 }

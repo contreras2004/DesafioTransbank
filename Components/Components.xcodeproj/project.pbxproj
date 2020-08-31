@@ -12,11 +12,14 @@
 		2CA98BE124F9981000021EF1 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA98BD324F9980F00021EF1 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CA98BEC24F9984100021EF1 /* TBSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98BEB24F9984100021EF1 /* TBSearchBarView.swift */; };
 		2CA98BF024F99DA100021EF1 /* ViewCodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98BEF24F99DA100021EF1 /* ViewCodableProtocol.swift */; };
-		2CA98BF524F9A5CA00021EF1 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98BF424F9A5CA00021EF1 /* UIView+ext.swift */; };
 		2CB51A2224FD383800139004 /* TBLottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A2124FD383800139004 /* TBLottieAnimationView.swift */; };
 		2CB51A2624FD3EF900139004 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51A2524FD3EF900139004 /* loading.json */; };
 		2CB51A2824FD433200139004 /* TBLottieAnimationView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */; };
 		2CB51A2B24FD4CBE00139004 /* TBLottieAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A2A24FD4CBE00139004 /* TBLottieAnimationViewModel.swift */; };
+		2CB51A9224FDB90E00139004 /* genericError.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51A8F24FDB90D00139004 /* genericError.json */; };
+		2CB51A9324FDB90E00139004 /* noConnection.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51A9024FDB90D00139004 /* noConnection.json */; };
+		2CB51A9424FDB90E00139004 /* emptyResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51A9124FDB90E00139004 /* emptyResults.json */; };
+		2CB51A9824FDC33300139004 /* searchTerm.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51A9724FDC33300139004 /* searchTerm.json */; };
 		3B0C44600F6B9E4EDF5CEC91 /* Pods_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53851B5170A38A70C0B66181 /* Pods_Components.framework */; };
 		6FE2CB90B24DACADBAE0A88D /* Pods_Components_ComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00B37E6C09DBCA39CD62F9D /* Pods_Components_ComponentsTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,11 +43,14 @@
 		2CA98BE024F9981000021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA98BEB24F9984100021EF1 /* TBSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBSearchBarView.swift; sourceTree = "<group>"; };
 		2CA98BEF24F99DA100021EF1 /* ViewCodableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodableProtocol.swift; sourceTree = "<group>"; };
-		2CA98BF424F9A5CA00021EF1 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		2CB51A2124FD383800139004 /* TBLottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLottieAnimationView.swift; sourceTree = "<group>"; };
 		2CB51A2524FD3EF900139004 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TBLottieAnimationView+ext.swift"; sourceTree = "<group>"; };
 		2CB51A2A24FD4CBE00139004 /* TBLottieAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLottieAnimationViewModel.swift; sourceTree = "<group>"; };
+		2CB51A8F24FDB90D00139004 /* genericError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genericError.json; sourceTree = "<group>"; };
+		2CB51A9024FDB90D00139004 /* noConnection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noConnection.json; sourceTree = "<group>"; };
+		2CB51A9124FDB90E00139004 /* emptyResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emptyResults.json; sourceTree = "<group>"; };
+		2CB51A9724FDC33300139004 /* searchTerm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = searchTerm.json; path = ../../../../../Downloads/searchTerm.json; sourceTree = "<group>"; };
 		44107F5225410E35A1FE3619 /* Pods-Components-ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components-ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-Components-ComponentsTests/Pods-Components-ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		53851B5170A38A70C0B66181 /* Pods_Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55474FB9DC2841AD69D8DFA1 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.debug.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +159,11 @@
 		2CB51A2424FD3D7D00139004 /* LottieAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				2CB51A9124FDB90E00139004 /* emptyResults.json */,
+				2CB51A8F24FDB90D00139004 /* genericError.json */,
+				2CB51A9024FDB90D00139004 /* noConnection.json */,
 				2CB51A2524FD3EF900139004 /* loading.json */,
+				2CB51A9724FDC33300139004 /* searchTerm.json */,
 			);
 			path = LottieAnimations;
 			sourceTree = "<group>";
@@ -162,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				2CB51A2724FD433200139004 /* TBLottieAnimationView+ext.swift */,
-				2CA98BF424F9A5CA00021EF1 /* UIView+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB51A9424FDB90E00139004 /* emptyResults.json in Resources */,
+				2CB51A9824FDC33300139004 /* searchTerm.json in Resources */,
+				2CB51A9324FDB90E00139004 /* noConnection.json in Resources */,
+				2CB51A9224FDB90E00139004 /* genericError.json in Resources */,
 				2CB51A2624FD3EF900139004 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA98BF524F9A5CA00021EF1 /* UIView+ext.swift in Sources */,
 				2CB51A2224FD383800139004 /* TBLottieAnimationView.swift in Sources */,
 				2CB51A2B24FD4CBE00139004 /* TBLottieAnimationViewModel.swift in Sources */,
 				2CA98BEC24F9984100021EF1 /* TBSearchBarView.swift in Sources */,

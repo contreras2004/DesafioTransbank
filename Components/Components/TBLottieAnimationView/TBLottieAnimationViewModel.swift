@@ -12,15 +12,18 @@ public enum TBLottieAnimation: String {
     case loading
     case noConnection
     case genericError
-    case noSearchResults
+    case emptyResults
+    case searchTerm
 }
 
-public struct TBLottieAnimationViewModel{
+public struct TBLottieAnimationViewModel: Equatable{
     let message: String
     let animation: TBLottieAnimation
+    let loopAnimation: Bool
 
-    public init(message: String, animation: TBLottieAnimation) {
+    public init(message: String, animation: TBLottieAnimation, loopAnimation: Bool = true) {
         self.message = message
         self.animation = animation
+        self.loopAnimation = loopAnimation
     }
 }

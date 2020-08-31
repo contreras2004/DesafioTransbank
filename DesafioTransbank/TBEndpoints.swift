@@ -10,6 +10,22 @@ import TBNetwork
 import Foundation
 
 enum Endpoint: TBEndpoint {
-    case itunes = "https://itunes.apple.com/search?term=in+utero&mediaType=music&limit=20"
+    case itunes = "itunes.apple.com"
+}
 
+enum EndpointBuilder {
+    static func buildEndpoint(endpoint: Endpoint, extraQueryItems: [URLQueryItem]) -> String? {
+        var queryItems: [URLQueryItem] = [
+            URLQueryItem(name: "mediaType", value: "music"),
+            URLQueryItem(name: "limit", value: "20")
+        ]
+        queryItems += extraQueryItems
+
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = endpoint.rawValue
+        components.path = "/search"
+        components.queryItems = queryItems
+        return components.url?.absoluteString
+    }
 }
