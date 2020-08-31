@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "e0dbfadbe7f277a8ccb6bed1db3e0b09"
-build_time: [1598647889, 486832000]
-inputs:
-  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/DesafioTransbank/ViewController.swift": !dirty [1598647104, 630627033]
-  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/DesafioTransbank/App/AppDelegate.swift": !dirty [1598643908, 601244126]
-  "/Users/matiascontreras/Documents/Repos/DesafioTransbank/DesafioTransbank/App/SceneDelegate.swift": !dirty [1598643824, 365857292]

@@ -10,12 +10,10 @@ import UIKit
 import Components
 
 class ViewController: UIViewController {
-    
-    override func loadView() {
-        self.view = TBSearchBarView()
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        self.view.addAnimation(viewModel: .init(message: "Cargando", animation: .loading))
     }
 }
