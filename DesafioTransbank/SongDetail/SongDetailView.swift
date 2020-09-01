@@ -16,7 +16,7 @@ struct SongDetailViewModel {
     let previewUrl: URL?
     let artworkUrl100: URL?
     let trackPrice: Double?
-    let releaseDate: Date?
+    let releaseDate: String?
 }
 
 class SongDetailView: UIView {
@@ -27,7 +27,7 @@ class SongDetailView: UIView {
         let image = UIImageView(frame: .zero)
         image.kf.setImage(with: self.viewModel.artworkUrl100)
         image.contentMode = .scaleAspectFit
-        image.backgroundColor = .lightGray
+        image.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         return image
     }()
 
@@ -50,9 +50,20 @@ class SongDetailView: UIView {
         return view
     }()
 
+    lazy var releaseDate: UILabel = {
+        let view = UILabel(frame: .zero)
+        view.font = .systemFont(ofSize: 16)
+        view.textColor = .lightGray
+        view.numberOfLines = 0
+        if let releaseDate = self.viewModel.releaseDate {
+            view.text = "Fecha de lanzamiento: \(releaseDate)"
+        }
+        return view
+    }()
+
     lazy var trackPriceLabel: UILabel = {
         let view = UILabel(frame: .zero)
-        view.font = .systemFont(ofSize: 22)
+        view.font = .systemFont(ofSize: 16)
         view.textColor = .darkGray
         view.numberOfLines = 0
         if let price = self.viewModel.trackPrice {
@@ -85,6 +96,7 @@ extension SongDetailView: ViewCodable {
         addSubview(songNameLabel)
         addSubview(artistNameLabel)
         addSubview(trackPriceLabel)
+        addSubview(releaseDate)
         addSubview(songPreview)
     }
 
@@ -97,7 +109,7 @@ extension SongDetailView: ViewCodable {
         }
 
         trackPriceLabel.layout.applyConstraint { view in
-            view.topAnchor(equalTo: trackImage.bottomAnchor, constant: 16)
+            view.topAnchor(equalTo: trackImage.bottomAnchor, constant: 24)
             view.rightAnchor(equalTo: rightAnchor, constant: -8)
             view.widthAnchor(lessThanOrEqualToConstant: 80)
         }
@@ -109,7 +121,13 @@ extension SongDetailView: ViewCodable {
         }
 
         artistNameLabel.layout.applyConstraint { view in
-            view.topAnchor(equalTo: songNameLabel.bottomAnchor)
+            view.topAnchor(equalTo: songNameLabel.bottomAnchor, constant: 16)
+            view.leftAnchor(equalTo: leftAnchor, constant: 8)
+            view.rightAnchor(equalTo: trackPriceLabel.leftAnchor, constant: -16)
+        }
+
+        releaseDate.layout.applyConstraint { view in
+            view.topAnchor(equalTo: artistNameLabel.bottomAnchor, constant: 16)
             view.leftAnchor(equalTo: leftAnchor, constant: 8)
             view.rightAnchor(equalTo: trackPriceLabel.leftAnchor, constant: -16)
         }

@@ -13,6 +13,13 @@ class SongDetailViewController: UIViewController {
     var song: Song
 
     lazy var songDetailView: SongDetailView = {
+        //var dateString: String?
+        /*if let date = song.releaseDate {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy"
+            dateString = dateFormatter.string(from: date)
+        }*/
+
         let viewModel = SongDetailViewModel(
             trackId: song.trackId,
             artistName: song.artistName,
@@ -20,7 +27,7 @@ class SongDetailViewController: UIViewController {
             previewUrl: song.previewUrl,
             artworkUrl100: song.artworkUrl100,
             trackPrice: song.trackPrice,
-            releaseDate: nil)
+            releaseDate: song.releaseDate?.date.simpleFormattedDateString())
         let view = SongDetailView(viewModel: viewModel)
         return view
     }()
@@ -32,6 +39,7 @@ class SongDetailViewController: UIViewController {
     init(song: Song) {
         self.song = song
         super.init(nibName: nil, bundle: nil)
+        self.title = "Detalle"
     }
 
     @available(*, unavailable)

@@ -17,6 +17,7 @@ public class PreviewMediaView: UIView {
         self.url = url
         super.init(frame: .zero)
         buildUI()
+        backgroundColor = .darkGray
     }
 
     required init?(coder: NSCoder) {
@@ -25,25 +26,47 @@ public class PreviewMediaView: UIView {
 
     lazy var button: UIButton = {
         let view = UIButton(frame: .zero)
+        view.setTitle("Reproducir Preview", for: .normal)
+        view.setTitleColor(.white, for: .normal)
+        view.addTarget(self, action: Selector(("play")), for: .touchUpInside)
         return view
     }()
 
     lazy var songPreview: WKWebView = {
         let view = WKWebView(frame: .zero)
-        if let url = self.url {
-            view.load(URLRequest(url: url))
-        }
-
+        view.isOpaque = false
+        view.backgroundColor = .darkGray
         return view
     }()
+
+    @objc
+    public func play() {
+        //we should add a loading indicator here...
+        self.button.isHidden = true
+        if let url = self.url {
+            songPreview.load(URLRequest(url: url))
+        }
+    }
+
+    public func stop() {
+        songPreview.stopLoading()
+    }
 }
 
 extension PreviewMediaView: ViewCodable {
     public func buildViewHierarchy() {
-        
+
+        addSubview(songPreview)
+        addSubview(button)
     }
 
     public func addConstraints() {
+        songPreview.layout.applyConstraint { view in
+            view.inset(to: self)
+        }
 
+        button.layout.applyConstraint { view in
+            view.inset(to: self, withInset: UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16))
+        }
     }
 }

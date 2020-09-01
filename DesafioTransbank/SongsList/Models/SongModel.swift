@@ -15,5 +15,5 @@ struct Song: Codable {
     let previewUrl: URL?
     let artworkUrl100: URL?
     let trackPrice: Double?
-    let releaseDate: String?
+    let releaseDate: CustomDate?
 }

@@ -84,6 +84,6 @@ extension SongsListViewController: SongsListViewDelegate {
     func didSelectSong(song: Song) {
         self.songsListView.searchBar.resignFirstResponder()
         let viewController = SongDetailViewController(song: song)
-        self.present(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

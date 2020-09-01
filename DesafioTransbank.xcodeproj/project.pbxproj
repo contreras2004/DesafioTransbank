@@ -23,6 +23,8 @@
 		2CB51A8E24FDA7E400139004 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A8D24FDA7E400139004 /* SongModel.swift */; };
 		2CB51A9B24FE816000139004 /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A9A24FE816000139004 /* SongDetailViewController.swift */; };
 		2CB51A9D24FE816C00139004 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A9C24FE816C00139004 /* SongDetailView.swift */; };
+		2CB51AA224FE9BC100139004 /* DateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AA124FE9BC100139004 /* DateWrapper.swift */; };
+		2CB51AA424FE9D8400139004 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AA324FE9D8400139004 /* Date+ext.swift */; };
 		D3747A184311410320CBF1F3 /* Pods_DesafioTransbankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */; };
 		EBACBF6F518D815E5F58F945 /* Pods_DesafioTransbank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,8 @@
 		2CB51A8D24FDA7E400139004 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		2CB51A9A24FE816000139004 /* SongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
 		2CB51A9C24FE816C00139004 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		2CB51AA124FE9BC100139004 /* DateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateWrapper.swift; sourceTree = "<group>"; };
+		2CB51AA324FE9D8400139004 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 		792BEC850A0E2F4AEBFE13CB /* Pods-DesafioTransbankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.release.xcconfig"; sourceTree = "<group>"; };
 		A584722A336F6F763085BE19 /* Pods-DesafioTransbankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +146,7 @@
 		2CA98B6F24F985C500021EF1 /* DesafioTransbank */ = {
 			isa = PBXGroup;
 			children = (
+				2CB51AA524FE9EA400139004 /* Utils */,
 				2CB51A7B24FD6BB900139004 /* SongsList */,
 				2CB51A9924FE814300139004 /* SongDetail */,
 				2CB51A7C24FD6CA800139004 /* TBEndpoints.swift */,
@@ -207,6 +212,15 @@
 				2CB51A9C24FE816C00139004 /* SongDetailView.swift */,
 			);
 			path = SongDetail;
+			sourceTree = "<group>";
+		};
+		2CB51AA524FE9EA400139004 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2CB51AA324FE9D8400139004 /* Date+ext.swift */,
+				2CB51AA124FE9BC100139004 /* DateWrapper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8B01B8C214181E0BD5CEC35E /* Frameworks */ = {
@@ -459,7 +473,9 @@
 				2CA98B7524F985C500021EF1 /* SongsListViewController.swift in Sources */,
 				2CA98B7124F985C500021EF1 /* AppDelegate.swift in Sources */,
 				2CB51A8E24FDA7E400139004 /* SongModel.swift in Sources */,
+				2CB51AA424FE9D8400139004 /* Date+ext.swift in Sources */,
 				2CB51A9B24FE816000139004 /* SongDetailViewController.swift in Sources */,
+				2CB51AA224FE9BC100139004 /* DateWrapper.swift in Sources */,
 				2CB51A7D24FD6CA800139004 /* TBEndpoints.swift in Sources */,
 				2CB51A8C24FD9C6200139004 /* SongCell.swift in Sources */,
 				2CB51A9D24FE816C00139004 /* SongDetailView.swift in Sources */,
