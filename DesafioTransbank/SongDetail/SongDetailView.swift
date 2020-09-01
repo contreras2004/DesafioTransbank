@@ -25,7 +25,7 @@ class SongDetailView: UIView {
 
     lazy var trackImage: UIImageView = {
         let image = UIImageView(frame: .zero)
-        image.kf.setImage(with: self.viewModel.artworkUrl100)
+        image.kf.setImage(with: self.viewModel.artworkUrl100, placeholder: UIImage(named: "placeholderImage"))
         image.contentMode = .scaleAspectFit
         image.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         return image
@@ -35,6 +35,8 @@ class SongDetailView: UIView {
         let view = UILabel(frame: .zero)
         view.text = self.viewModel.trackName
         view.font = .systemFont(ofSize: 26)
+        view.minimumScaleFactor = 0.8
+        view.adjustsFontSizeToFitWidth = true
         view.numberOfLines = 0
         return view
     }()
@@ -42,6 +44,8 @@ class SongDetailView: UIView {
     lazy var artistNameLabel: UILabel = {
         let view = UILabel(frame: .zero)
         view.font = .systemFont(ofSize: 22)
+        view.minimumScaleFactor = 0.8
+        view.adjustsFontSizeToFitWidth = true
         view.textColor = .darkGray
         view.numberOfLines = 0
         if let artistName = self.viewModel.artistName {
@@ -53,6 +57,8 @@ class SongDetailView: UIView {
     lazy var releaseDate: UILabel = {
         let view = UILabel(frame: .zero)
         view.font = .systemFont(ofSize: 16)
+        view.minimumScaleFactor = 0.8
+        view.adjustsFontSizeToFitWidth = true
         view.textColor = .lightGray
         view.numberOfLines = 0
         if let releaseDate = self.viewModel.releaseDate {
@@ -66,6 +72,7 @@ class SongDetailView: UIView {
         view.font = .systemFont(ofSize: 16)
         view.textColor = .darkGray
         view.numberOfLines = 0
+        view.adjustsFontSizeToFitWidth = true
         if let price = self.viewModel.trackPrice {
             view.text = "$ \(price)"
         }
@@ -111,7 +118,7 @@ extension SongDetailView: ViewCodable {
         trackPriceLabel.layout.applyConstraint { view in
             view.topAnchor(equalTo: trackImage.bottomAnchor, constant: 24)
             view.rightAnchor(equalTo: rightAnchor, constant: -8)
-            view.widthAnchor(lessThanOrEqualToConstant: 80)
+            view.widthAnchor(greaterThanOrEqualToConstant: 40)
         }
 
         songNameLabel.layout.applyConstraint { view in
@@ -123,13 +130,13 @@ extension SongDetailView: ViewCodable {
         artistNameLabel.layout.applyConstraint { view in
             view.topAnchor(equalTo: songNameLabel.bottomAnchor, constant: 16)
             view.leftAnchor(equalTo: leftAnchor, constant: 8)
-            view.rightAnchor(equalTo: trackPriceLabel.leftAnchor, constant: -16)
+            view.rightAnchor(equalTo: rightAnchor, constant: -16)
         }
 
         releaseDate.layout.applyConstraint { view in
             view.topAnchor(equalTo: artistNameLabel.bottomAnchor, constant: 16)
             view.leftAnchor(equalTo: leftAnchor, constant: 8)
-            view.rightAnchor(equalTo: trackPriceLabel.leftAnchor, constant: -16)
+            view.rightAnchor(equalTo: rightAnchor, constant: -16)
         }
 
         songPreview.layout.applyConstraint { view in

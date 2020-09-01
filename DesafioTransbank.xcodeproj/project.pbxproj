@@ -12,8 +12,6 @@
 		2CA98B7524F985C500021EF1 /* SongsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B7424F985C500021EF1 /* SongsListViewController.swift */; };
 		2CA98B7A24F985C700021EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA98B7924F985C700021EF1 /* Assets.xcassets */; };
 		2CA98B7D24F985C700021EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA98B7B24F985C700021EF1 /* LaunchScreen.storyboard */; };
-		2CA98B8824F985C700021EF1 /* DesafioTransbankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */; };
-		2CA98B9324F985C700021EF1 /* DesafioTransbankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */; };
 		2CA98BF224F9A3AD00021EF1 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA98BF124F9A3AD00021EF1 /* Components.framework */; };
 		2CB51A7D24FD6CA800139004 /* TBEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A7C24FD6CA800139004 /* TBEndpoints.swift */; };
 		2CB51A7F24FD6F4300139004 /* TBNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB51A7E24FD6F4300139004 /* TBNetwork.framework */; };
@@ -25,19 +23,19 @@
 		2CB51A9D24FE816C00139004 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51A9C24FE816C00139004 /* SongDetailView.swift */; };
 		2CB51AA224FE9BC100139004 /* DateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AA124FE9BC100139004 /* DateWrapper.swift */; };
 		2CB51AA424FE9D8400139004 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AA324FE9D8400139004 /* Date+ext.swift */; };
+		2CB51AA924FEA07600139004 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AA824FEA07600139004 /* UIView+ext.swift */; };
+		2CB51AAB24FEA10F00139004 /* SongsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AAA24FEA10F00139004 /* SongsListViewControllerTests.swift */; };
+		2CB51AAD24FEA41D00139004 /* MockSongsListRequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AAC24FEA41D00139004 /* MockSongsListRequestPerformer.swift */; };
+		2CB51AB024FEA6C700139004 /* EmptySongsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51AAF24FEA6C700139004 /* EmptySongsResponse.json */; };
+		2CB51AB224FEA70100139004 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AB124FEA70100139004 /* JSONHelper.swift */; };
+		2CB51AB524FEAD2E00139004 /* SongsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB51AB424FEAD2E00139004 /* SongsResponse.json */; };
+		2CB51ABA24FEB13D00139004 /* SongDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB51AB924FEB13D00139004 /* SongDetailViewControllerTests.swift */; };
 		D3747A184311410320CBF1F3 /* Pods_DesafioTransbankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */; };
 		EBACBF6F518D815E5F58F945 /* Pods_DesafioTransbank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2CA98B8424F985C700021EF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CA98B6524F985C500021EF1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2CA98B6C24F985C500021EF1;
-			remoteInfo = DesafioTransbank;
-		};
-		2CA98B8F24F985C700021EF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CA98B6524F985C500021EF1 /* Project object */;
 			proxyType = 1;
@@ -55,11 +53,7 @@
 		2CA98B7C24F985C700021EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CA98B7E24F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA98B8324F985C700021EF1 /* DesafioTransbankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTransbankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTransbankTests.swift; sourceTree = "<group>"; };
 		2CA98B8924F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTransbankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTransbankUITests.swift; sourceTree = "<group>"; };
-		2CA98B9424F985C700021EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA98BED24F99A9400021EF1 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA98BF124F9A3AD00021EF1 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB51A7924FD5FA600139004 /* TBNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TBNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +67,14 @@
 		2CB51A9C24FE816C00139004 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 		2CB51AA124FE9BC100139004 /* DateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateWrapper.swift; sourceTree = "<group>"; };
 		2CB51AA324FE9D8400139004 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
+		2CB51AA724FEA07600139004 /* DesafioTransbankTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesafioTransbankTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		2CB51AA824FEA07600139004 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
+		2CB51AAA24FEA10F00139004 /* SongsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListViewControllerTests.swift; sourceTree = "<group>"; };
+		2CB51AAC24FEA41D00139004 /* MockSongsListRequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSongsListRequestPerformer.swift; sourceTree = "<group>"; };
+		2CB51AAF24FEA6C700139004 /* EmptySongsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmptySongsResponse.json; sourceTree = "<group>"; };
+		2CB51AB124FEA70100139004 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		2CB51AB424FEAD2E00139004 /* SongsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SongsResponse.json; sourceTree = "<group>"; };
+		2CB51AB924FEB13D00139004 /* SongDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		792BEC850A0E2F4AEBFE13CB /* Pods-DesafioTransbankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.release.xcconfig"; sourceTree = "<group>"; };
 		A584722A336F6F763085BE19 /* Pods-DesafioTransbankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTransbankTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTransbankTests/Pods-DesafioTransbankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4328B15DBA23D57BE4795E7 /* Pods_DesafioTransbank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTransbank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,13 +102,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2CA98B8B24F985C700021EF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,7 +121,6 @@
 			children = (
 				2CA98B6F24F985C500021EF1 /* DesafioTransbank */,
 				2CA98B8624F985C700021EF1 /* DesafioTransbankTests */,
-				2CA98B9124F985C700021EF1 /* DesafioTransbankUITests */,
 				2CA98B6E24F985C500021EF1 /* Products */,
 				0E9FFF24FB47CC6DAFAD9826 /* Pods */,
 				8B01B8C214181E0BD5CEC35E /* Frameworks */,
@@ -138,7 +132,6 @@
 			children = (
 				2CA98B6D24F985C500021EF1 /* DesafioTransbank.app */,
 				2CA98B8324F985C700021EF1 /* DesafioTransbankTests.xctest */,
-				2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,19 +152,14 @@
 		2CA98B8624F985C700021EF1 /* DesafioTransbankTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CA98B8724F985C700021EF1 /* DesafioTransbankTests.swift */,
+				2CB51AB324FEA71D00139004 /* Helpers */,
+				2CB51AAE24FEA65C00139004 /* JSON */,
+				2CB51AA624FEA03300139004 /* SongsListViewControllerTests */,
+				2CB51AB824FEB11700139004 /* SongDetailViewControllerTests */,
 				2CA98B8924F985C700021EF1 /* Info.plist */,
+				2CB51AA724FEA07600139004 /* DesafioTransbankTests-Bridging-Header.h */,
 			);
 			path = DesafioTransbankTests;
-			sourceTree = "<group>";
-		};
-		2CA98B9124F985C700021EF1 /* DesafioTransbankUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2CA98B9224F985C700021EF1 /* DesafioTransbankUITests.swift */,
-				2CA98B9424F985C700021EF1 /* Info.plist */,
-			);
-			path = DesafioTransbankUITests;
 			sourceTree = "<group>";
 		};
 		2CA98BA124F9968300021EF1 /* App */ = {
@@ -221,6 +209,41 @@
 				2CB51AA124FE9BC100139004 /* DateWrapper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2CB51AA624FEA03300139004 /* SongsListViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CB51AAA24FEA10F00139004 /* SongsListViewControllerTests.swift */,
+				2CB51AAC24FEA41D00139004 /* MockSongsListRequestPerformer.swift */,
+			);
+			path = SongsListViewControllerTests;
+			sourceTree = "<group>";
+		};
+		2CB51AAE24FEA65C00139004 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2CB51AAF24FEA6C700139004 /* EmptySongsResponse.json */,
+				2CB51AB424FEAD2E00139004 /* SongsResponse.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2CB51AB324FEA71D00139004 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CB51AA824FEA07600139004 /* UIView+ext.swift */,
+				2CB51AB124FEA70100139004 /* JSONHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2CB51AB824FEB11700139004 /* SongDetailViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CB51AB924FEB13D00139004 /* SongDetailViewControllerTests.swift */,
+			);
+			path = SongDetailViewControllerTests;
 			sourceTree = "<group>";
 		};
 		8B01B8C214181E0BD5CEC35E /* Frameworks */ = {
@@ -279,24 +302,6 @@
 			productReference = 2CA98B8324F985C700021EF1 /* DesafioTransbankTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2CA98B8D24F985C700021EF1 /* DesafioTransbankUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2CA98B9D24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankUITests" */;
-			buildPhases = (
-				2CA98B8A24F985C700021EF1 /* Sources */,
-				2CA98B8B24F985C700021EF1 /* Frameworks */,
-				2CA98B8C24F985C700021EF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2CA98B9024F985C700021EF1 /* PBXTargetDependency */,
-			);
-			name = DesafioTransbankUITests;
-			productName = DesafioTransbankUITests;
-			productReference = 2CA98B8E24F985C700021EF1 /* DesafioTransbankUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,10 +317,7 @@
 					};
 					2CA98B8224F985C700021EF1 = {
 						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 2CA98B6C24F985C500021EF1;
-					};
-					2CA98B8D24F985C700021EF1 = {
-						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 						TestTargetID = 2CA98B6C24F985C500021EF1;
 					};
 				};
@@ -335,7 +337,6 @@
 			targets = (
 				2CA98B6C24F985C500021EF1 /* DesafioTransbank */,
 				2CA98B8224F985C700021EF1 /* DesafioTransbankTests */,
-				2CA98B8D24F985C700021EF1 /* DesafioTransbankUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,13 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2CA98B8C24F985C700021EF1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2CB51AB024FEA6C700139004 /* EmptySongsResponse.json in Resources */,
+				2CB51AB524FEAD2E00139004 /* SongsResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,15 +485,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA98B8824F985C700021EF1 /* DesafioTransbankTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2CA98B8A24F985C700021EF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2CA98B9324F985C700021EF1 /* DesafioTransbankUITests.swift in Sources */,
+				2CB51AAD24FEA41D00139004 /* MockSongsListRequestPerformer.swift in Sources */,
+				2CB51ABA24FEB13D00139004 /* SongDetailViewControllerTests.swift in Sources */,
+				2CB51AA924FEA07600139004 /* UIView+ext.swift in Sources */,
+				2CB51AAB24FEA10F00139004 /* SongsListViewControllerTests.swift in Sources */,
+				2CB51AB224FEA70100139004 /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,11 +500,6 @@
 			isa = PBXTargetDependency;
 			target = 2CA98B6C24F985C500021EF1 /* DesafioTransbank */;
 			targetProxy = 2CA98B8424F985C700021EF1 /* PBXContainerItemProxy */;
-		};
-		2CA98B9024F985C700021EF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2CA98B6C24F985C500021EF1 /* DesafioTransbank */;
-			targetProxy = 2CA98B8F24F985C700021EF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -684,6 +671,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DesafioTransbankTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -694,6 +682,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DesafioTransbankTests/DesafioTransbankTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTransbank.app/DesafioTransbank";
@@ -706,6 +696,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DesafioTransbankTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -716,47 +707,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DesafioTransbankTests/DesafioTransbankTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTransbank.app/DesafioTransbank";
-			};
-			name = Release;
-		};
-		2CA98B9E24F985C700021EF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesafioTransbankUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioTransbank;
-			};
-			name = Debug;
-		};
-		2CA98B9F24F985C700021EF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesafioTransbankUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = contreras.DesafioTransbankUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioTransbank;
 			};
 			name = Release;
 		};
@@ -786,15 +740,6 @@
 			buildConfigurations = (
 				2CA98B9B24F985C700021EF1 /* Debug */,
 				2CA98B9C24F985C700021EF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2CA98B9D24F985C700021EF1 /* Build configuration list for PBXNativeTarget "DesafioTransbankUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2CA98B9E24F985C700021EF1 /* Debug */,
-				2CA98B9F24F985C700021EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

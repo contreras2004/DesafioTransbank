@@ -12,15 +12,16 @@ import TBNetwork
 
 class SongsListViewController: UIViewController {
 
-    private lazy var songsListView: SongsListView = {
+    private let requestPerformer: TBRequestPerformer
+
+    lazy var songsListView: SongsListView = {
         let view = SongsListView(viewModel: SongsListViewModel(songs: []))
         view.delegate = self
         return view
     }()
 
-    init() {
-        // this should initialize with a provider that handles the network requests..
-        // but for the sake of this example we will use a static function to fetch the data
+    init(requestPerformer: TBRequestPerformer = TBRequest()) {
+        self.requestPerformer = requestPerformer
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -51,7 +52,7 @@ class SongsListViewController: UIViewController {
             .init(name: "term", value: searchTerm)
         ]) else { return }
         debugPrint(fullUrl)
-        TBRequest.request(endpoint: fullUrl) { [weak self] (result: Result<ItunesResponseModel, Error>) in
+        requestPerformer.request(endpoint: fullUrl) { [weak self] (result: Result<ItunesResponseModel, Error>) in
             self?.view.removeAnimation()
             switch result {
             case .success(let itunesResponse):

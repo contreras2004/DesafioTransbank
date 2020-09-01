@@ -26,7 +26,18 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2CA98B6C24F985C500021EF1"
+            BuildableName = "DesafioTransbank.app"
+            BlueprintName = "DesafioTransbank"
+            ReferencedContainer = "container:DesafioTransbank.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,16 +46,6 @@
                BlueprintIdentifier = "2CA98B8224F985C700021EF1"
                BuildableName = "DesafioTransbankTests.xctest"
                BlueprintName = "DesafioTransbankTests"
-               ReferencedContainer = "container:DesafioTransbank.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2CA98B8D24F985C700021EF1"
-               BuildableName = "DesafioTransbankUITests.xctest"
-               BlueprintName = "DesafioTransbankUITests"
                ReferencedContainer = "container:DesafioTransbank.xcodeproj">
             </BuildableReference>
          </TestableReference>

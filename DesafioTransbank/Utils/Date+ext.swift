@@ -16,11 +16,4 @@ public extension Date {
         dateFormatter.dateFormat = "dd/MM/yyyy"
         return dateFormatter.string(from: self)
     }
-
-    func simpleFormattedDayWithMonthAndYear() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "es_CL_POSIX")
-        dateFormatter.dateFormat = "d 'de' MMMM',' yyyy"
-        return dateFormatter.string(from: self)
-    }
 }

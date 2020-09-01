@@ -10,13 +10,13 @@ import Alamofire
 
 public typealias TBEndpoint = String
 
-protocol TBRequestPerformer: AnyObject {
+public protocol TBRequestPerformer: AnyObject {
     //static func request<T: Codable>(endpoint: TBEndpoint, completionHandler: @escaping (DataResponse<T, AFError>) -> Void)
-    static func request<T: Codable>(endpoint: TBEndpoint, completionHandler: @escaping (Result<T, Error>) -> Void)
+    func request<T: Codable>(endpoint: TBEndpoint, completionHandler: @escaping (Result<T, Error>) -> Void)
 }
 
 public class TBRequest: NSObject, TBRequestPerformer {
-    public static func request<T: Codable>(endpoint: TBEndpoint, completionHandler: @escaping (Result<T, Error>) -> Void) {
+    public func request<T: Codable>(endpoint: TBEndpoint, completionHandler: @escaping (Result<T, Error>) -> Void) {
 
         AF.request(endpoint) { urlRequest in
             urlRequest.timeoutInterval = 5
@@ -26,6 +26,10 @@ public class TBRequest: NSObject, TBRequestPerformer {
                 let jsonDecoder = JSONDecoder()
                 guard let data = data else { return }
                 do {
+                    if let JSONString = String(data: data, encoding: String.Encoding.utf8) {
+                       print(JSONString)
+                    }
+
                     let decodedData = try jsonDecoder.decode(T.self, from: data)
                     completionHandler(Result.success(decodedData))
                 } catch (let error) {

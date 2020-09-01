@@ -23,15 +23,17 @@ class SongCell: UITableViewCell {
         didSet {
             titleLabel.text = self.viewModel?.songTitle
             artisteLabel.text = self.viewModel?.artistName
-            imageView?.kf.setImage(with: self.viewModel?.imageUrl) { [weak self] _ in
-                self?.setNeedsLayout()
+            imageView?.kf.setImage(
+                with: self.viewModel?.imageUrl,
+                placeholder: UIImage(named: "placeholderImage")) { [weak self] _ in
+                    self?.setNeedsLayout()
             }
         }
     }
 
     lazy var songImage: UIImageView = {
         let view = UIImageView(frame: .zero)
-        view.contentMode = .scaleAspectFit
+        view.contentMode = .scaleAspectFill
         return view
     }()
 

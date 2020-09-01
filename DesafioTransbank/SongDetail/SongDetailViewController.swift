@@ -13,12 +13,6 @@ class SongDetailViewController: UIViewController {
     var song: Song
 
     lazy var songDetailView: SongDetailView = {
-        //var dateString: String?
-        /*if let date = song.releaseDate {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd-MM-yyyy"
-            dateString = dateFormatter.string(from: date)
-        }*/
 
         let viewModel = SongDetailViewModel(
             trackId: song.trackId,

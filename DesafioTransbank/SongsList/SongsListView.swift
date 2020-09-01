@@ -90,6 +90,7 @@ extension SongsListView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectSong(song: self.viewModel.songs[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
