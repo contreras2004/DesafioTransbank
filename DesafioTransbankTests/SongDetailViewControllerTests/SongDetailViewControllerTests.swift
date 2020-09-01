@@ -33,7 +33,7 @@ final class SongsDetailViewControllerTests: QuickSpec {
 
         describe("#init") {
             it("has the correct layout") {
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
         }
     }

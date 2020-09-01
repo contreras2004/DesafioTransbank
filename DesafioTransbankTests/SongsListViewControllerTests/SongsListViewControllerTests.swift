@@ -36,7 +36,7 @@ final class SongsListViewControllerTests: QuickSpec {
 
         describe("#init") {
             it("has the correct layout") {
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
 
             it("has the correct layout when searching") {
@@ -44,7 +44,7 @@ final class SongsListViewControllerTests: QuickSpec {
                 requestPerformer.state = .noResponse
                 sut.songsListView.searchBar.text = searchTerm
                 sut.searchBar(sut.songsListView.searchBar, textDidChange: searchTerm)
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
 
             it("has the correct layout when searching and empty response from server") {
@@ -52,7 +52,7 @@ final class SongsListViewControllerTests: QuickSpec {
                 requestPerformer.state = .emptyResponse
                 sut.songsListView.searchBar.text = searchTerm
                 sut.searchBar(sut.songsListView.searchBar, textDidChange: searchTerm)
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
 
             it("has the correct layout when searching and correct response from server") {
@@ -60,7 +60,7 @@ final class SongsListViewControllerTests: QuickSpec {
                 requestPerformer.state = .withData
                 sut.songsListView.searchBar.text = searchTerm
                 sut.searchBar(sut.songsListView.searchBar, textDidChange: searchTerm)
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
 
             it("has the correct layout when searching and error response from server") {
@@ -68,7 +68,7 @@ final class SongsListViewControllerTests: QuickSpec {
                 requestPerformer.state = .error
                 sut.songsListView.searchBar.text = searchTerm
                 sut.searchBar(sut.songsListView.searchBar, textDidChange: searchTerm)
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
         }
     }
