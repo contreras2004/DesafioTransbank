@@ -9,6 +9,10 @@
 import UIKit
 import Components
 
+protocol SongsListViewDelegate: AnyObject {
+    func didSelectSong(song: Song)
+}
+
 class SongsListViewModel {
     var songs: [Song] = []
 
@@ -18,6 +22,8 @@ class SongsListViewModel {
 }
 
 class SongsListView: UIView {
+
+    weak var delegate: SongsListViewDelegate?
 
     var viewModel: SongsListViewModel {
         didSet {
@@ -53,6 +59,7 @@ class SongsListView: UIView {
         buildUI()
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -79,6 +86,10 @@ extension SongsListView: UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelectSong(song: self.viewModel.songs[indexPath.row])
     }
 }
 

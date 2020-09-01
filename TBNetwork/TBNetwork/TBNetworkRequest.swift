@@ -21,7 +21,6 @@ public class TBRequest: NSObject, TBRequestPerformer {
         AF.request(endpoint) { urlRequest in
             urlRequest.timeoutInterval = 5
         }.response { response in
-            response.result
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
@@ -35,7 +34,7 @@ public class TBRequest: NSObject, TBRequestPerformer {
                 }
 
             case .failure(let error):
-                debugPrint("Encontro un error: \(error.underlyingError)")
+                debugPrint("Error: \(error)")
                 completionHandler(Result.failure(error))
             }
         }

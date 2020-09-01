@@ -12,7 +12,11 @@ import TBNetwork
 
 class SongsListViewController: UIViewController {
 
-    private lazy var songsListView = SongsListView(viewModel: SongsListViewModel(songs: []))
+    private lazy var songsListView: SongsListView = {
+        let view = SongsListView(viewModel: SongsListViewModel(songs: []))
+        view.delegate = self
+        return view
+    }()
 
     init() {
         // this should initialize with a provider that handles the network requests..
@@ -20,6 +24,7 @@ class SongsListViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,7 +38,11 @@ class SongsListViewController: UIViewController {
         self.title = "Canciones" //this should be in a localized file... but for the sake of this test...
         self.view.backgroundColor = .white
         self.songsListView.searchBar.delegate = self
-        self.songsListView.addAnimation(viewModel: .init(message: "Para comenzar ingresa\nlo que quieres buscar", animation: .searchTerm, loopAnimation: false))
+        self.songsListView.addAnimation(
+            viewModel: .init(
+                message: "Para comenzar ingresa\nlo que quieres buscar",
+                animation: .searchTerm,
+                loopAnimation: false))
     }
 
     private func search(searchTerm: String) {
@@ -51,6 +60,7 @@ class SongsListViewController: UIViewController {
                 self?.view.addAnimation(viewModel: .init(
                     message: "Ocurrió un error",
                     animation: .genericError))
+                debugPrint("Error: \(error)")
             }
         }
     }
@@ -67,5 +77,13 @@ extension SongsListViewController: UISearchBarDelegate {
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         self.songsListView.searchBar.resignFirstResponder()
+    }
+}
+
+extension SongsListViewController: SongsListViewDelegate {
+    func didSelectSong(song: Song) {
+        self.songsListView.searchBar.resignFirstResponder()
+        let viewController = SongDetailViewController(song: song)
+        self.present(viewController, animated: true)
     }
 }
