@@ -11,6 +11,7 @@ import Foundation
 
 enum Endpoint: TBEndpoint {
     case itunes = "itunes.apple.com"
+    case thisIsAnotherDiferentEndpoint
 }
 
 enum EndpointBuilder {
