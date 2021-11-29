@@ -139,6 +139,7 @@
 		2CA98B6F24F985C500021EF1 /* DesafioTransbank */ = {
 			isa = PBXGroup;
 			children = (
+				8E30B9C1275563E100433F58 /* Folder to be deleted */,
 				2CB51AA524FE9EA400139004 /* Utils */,
 				2CB51A7B24FD6BB900139004 /* SongsList */,
 				2CB51A9924FE814300139004 /* SongDetail */,
@@ -257,6 +258,13 @@
 				DEDBAD5383A8977E9BAD8F74 /* Pods_DesafioTransbankTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E30B9C1275563E100433F58 /* Folder to be deleted */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Folder to be deleted";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
