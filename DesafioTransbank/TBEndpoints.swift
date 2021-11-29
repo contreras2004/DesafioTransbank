@@ -10,7 +10,7 @@ import TBNetwork
 import Foundation
 
 enum Endpoint: TBEndpoint {
-    case itunes = "itunes.apple.com/chao"
+    case itunes = "itunes.apple.com/hola"
     case thisIsAnotherDiferentEndpoint
 }
 
