@@ -13,7 +13,6 @@ public enum TBLottieAnimation: String {
     case noConnection
     case genericError
     case emptyResults
-    case searchTerm
 }
 
 public struct TBLottieAnimationViewModel: Equatable{

@@ -42,7 +42,7 @@ class SongsListViewController: UIViewController {
         self.songsListView.addAnimation(
             viewModel: .init(
                 message: "Para comenzar ingresa\nlo que quieres buscar",
-                animation: .searchTerm,
+                animation: .loading,
                 loopAnimation: false))
     }
 
